@@ -1,0 +1,83 @@
+body , html{
+    height: 100%;
+    width: 100%;   
+    text-transform: uppercase;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% 73% 7%;
+    font-family: 'Indie Flower', cursive;
+}
+
+header, footer { grid-column: span 12 }
+
+main {
+    height: 73%;
+    grid-column: span 12;
+    overflow: auto;
+    background-color:goldenrod;
+}
+
+header{
+    background-color: silver;
+    height: 20%;
+    background-image: linear-gradient(silver, white , gray);
+    line-height: 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: silver;
+    height: 7%;
+    background-image: linear-gradient(silver, white , gray);
+}
+
+
+
+.pro{
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+    margin: 2%;
+    box-shadow:  4px 4px 4px 4px;
+}
+
+.pro > p{
+    display: inline;
+}
+
+
+.a-href{
+    color: blue;
+}
+
+.contact-h3{
+    font-family: 'Anton', sans-serif;
+}
+
+.about-container{
+    text-align: justify;
+    
+}
+
+
+.about-container > p {
+    font-weight: bolder;
+}
+
+.about-container > p:nth-of-type(odd) {
+    color: blue;
+}
+
+.about-container > p:nth-of-type(even) {
+    color: purple;
+}
